@@ -7,8 +7,7 @@ a mock endpoint for functional testing.
 
 The project uses a special 2-phase build process that statically
 compiles Go binaries and injects them into an empty Docker image,
-shrinking the resulting image from hundreds of megabytes to a
-< 10 MB.
+shrinking the resulting image from hundreds of MB to < 5 MB.
 
 ## Running this Container
 
@@ -20,7 +19,7 @@ $ docker run -p 8080:8080 deis/mock-http-server
 
 To build the image, run `make build`.
 
-The build/runtime environment is split into two parts:
+The build and runtime environments are split into two parts:
 
 ### The build environment
 
